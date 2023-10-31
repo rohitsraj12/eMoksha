@@ -1,0 +1,135 @@
+/* =====================================
+    Project Name    : emoksha
+    Developed By    : https://github.com/rohitsraj12
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+:root {
+    --color-white: #ffffff;
+    --color-theme: #184376;
+
+    --color-text-1: #515151;
+    --color-text-2: #676767;
+    --color-text-3: #616161;
+
+    --color-dark: #272a2c;
+    --color-black: #121212;
+    
+    --color-link: #F3752F;
+    
+    --font-primary: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-primary);
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(224, 224, 224);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(38, 38, 37);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background-color: #7f7f7f;
+      box-shadow: inset rgb(79, 79, 190) rgb(100, 79, 206);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #626262;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  strong {
+      font-weight: 400;
+  }
+  
+  p,
+  li {
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5rem;
+    color: var(--color-text-1);
+  }
+
+  small {
+    font-size: 0.9rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color:rgb(131, 131, 131);
+  }
+
+  /* typography */
+  .text__tagline {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: var(--color-text-1);
+  }
+
+  .header__primary {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-theme);
+  }
+
+  .btn__primary {
+    padding: 8px 30px;
+    background-color: var(--color-link);
+    color: var(--color-white);
+  }
+  
+  .btn__primary:hover {
+    opacity: 0.8;
+    background-color: var(--color-link);
+    color: var(--color-white);
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms;
+}
+
+.primary__link {
+    color: var(--color-link);
+}
+
+.primary__link:hover{
+    color: var(--color-link);
+    opacity: 0.8;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms;
+}
