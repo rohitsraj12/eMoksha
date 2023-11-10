@@ -17,13 +17,13 @@
         <div class="body__banner">
             <div class="wrap__banner">
                 <div class="d__lg">
-                    <img class="w-100" height="600px" src="img/banner/banner-lg-1.jpg" alt="" />
+                    <img class="w-100" src="img/banner/banner-lg-1.png" alt="" />
                 </div>
                 <!-- <div class="d__md">
                     <img class="w-100" src="img/banner/banner-1.png" alt="" />
                 </div> -->
                 <div class="d__sm">
-                    <img class="w-100" src="img/banner/banner-sm-1.jpg" alt="" />
+                    <img class="w-100" src="img/banner/banner-sm-1.png" alt="" />
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                                                 CTlytics also facilitates meaningful discussions with teachers and students, empowering them with insights into how earning credentials can open doors to opportunities. It quantifies student interest through enrollment and retention rates for various programs, enabling you to tailor your CTE offerings to meet their needs and aspirations.
                                             </p>
                                             <p>
-                                                Join us for this exclusive webinar and embark on a journey toward redefining Career and Technical Education. The webinar will be held online on 7th November 2023 from 1 p.m.- 2 p.m., and the Zoom link will be provided upon registration. Register now to secure your spot and be part of the future of education.
+                                                Join us for this exclusive webinar and embark on a journey toward redefining Career and Technical Education. The webinar will be held online on 15th November 2023 from 12 p.m.- 1 p.m., and the Zoom link will be provided upon registration. Register now to secure your spot and be part of the future of education.
                                             </p>
                                             <p>
                                                 Do not miss this opportunity to unlock the potential of multi-year data with CTlytics and revolutionize CTE! <a href="#" class="primary__link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register</a>. Unlock the potential. Shape the future.
@@ -85,21 +85,21 @@
                                             </h2>
                                         </header>
                                         <div class="article__body px-3">
-                                            <form action="">
+                                            <form action="form.php" method="POST">
                                             
                                                 <div class="mb-3">
                                                     <label for="name" class="form-label">Full Name</label>
-                                                    <input type="text" class="form-control" id="name" required>
+                                                    <input type="text" name="name" class="form-control" id="name" required>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="email" required>
+                                                    <input type="email" name="email" class="form-control" id="email" required>
                                                 </div>
                                                 <div class="mb-4">
                                                     <label for="organization" class="form-label">Organization Name</label>
-                                                    <input type="text" class="form-control" id="organization" required>
+                                                    <input type="text" name="org" class="form-control" id="organization" required>
                                                 </div>
-                                                <button type="submit" class="btn btn__primary w-100">Submit</button>
+                                                <button type="submit" name="submit" class="btn btn__primary w-100">Submit</button>
                                                 
                                             </form>
                                         </div>
@@ -133,27 +133,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     
-                    <form action="">
+                    <form action="form.php" method="POST">
                         <div class="modal-body">
-                        
                                                 
                             <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" name="name" class="form-control" id="name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" name="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-4">
                                 <label for="organization" class="form-label">Organization Name</label>
-                                <input type="text" class="form-control" id="organization" required>
+                                <input type="text" name="org" class="form-control" id="organization">
                             </div>
                         </div>
 
                         <div class="modal-footer">
                         <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn__primary">Submit</button>
+                        <button type="submit" name="submit" class="btn btn__primary">Submit</button>
                         </div>
                     </form>
                 </div>

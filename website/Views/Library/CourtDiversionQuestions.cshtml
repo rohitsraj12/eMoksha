@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Court Diversion Questions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        $("form").submit(function () {
+            if ($('#mce-FNAME').val() == '') {
+                alert("Name Required.");
+                return false;
+            }
+            if ($('#mce-EMAIL').val() == '') {
+                alert("Email Address Required.");
+                return false;
+            }
+
+            var legalDomains = {
+                "-yahoo.com": true,
+                "-gmail.com": true,
+                "-hotmail.com": true,
+                "-msn.com": true
+            };
+            reg_email = $('#mce-EMAIL').val();
+            var matches = reg_email.match(/@@(.*)$/);
+            if (matches) {
+
+                if (("-" + matches[1]) in legalDomains) {
+                    // found the domain in the permitted list
+                    alert("Please enter valid Email Address.");
+                    return false;
+                }
+            }
+
+        });
+    });
+
+
+</script>
+<!-- Start Use -->
+<section class="section bg-image" id="use">
+    <div class="container img-box-shadow p-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="../images/Court_50-Diversion Questions_3.png" class="mx-auto img-box-shadow basic-img " alt="" />
+            </div>
+
+            <div class="col-lg-6">
+
+           
+
+                <form action="https://emokshallc.us14.list-manage.com/subscribe/post?u=bd5185556f02c73fc4ded063a&amp;id=afd201734c&amp;f_id=00ba9be0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-container" target="mc-embedded-subscribe-form" novalidate onsubmit="submitted=true">
+                  
+                    <p>
+                       If extracting valuable insights from mountains of data feels like a challenge then you are not alone. Sometimes you just need to know where to even start and what questions you should be asking. This comprehensive checklist is a starting point to help you start asking the right questions and unlock the true potential of your diversion data. Need assistance or have feedback? Reach out to us anytime – we're here to support you on your data-driven journey to success!
+                    </p>
+                    <div class="mb-3">
+                        <label for="mce-FNAME" class="form-label">Name  <span class="asterisk">*</span></label>
+                        <input type="text" class="form-control" id="mce-FNAME" name="FNAME" aria-describedby="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mce-EMAIL" class="form-label">Email Address  <span class="asterisk">*</span></label>
+                        <input type="email" class="form-control" id="mce-EMAIL" name="EMAIL" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                   
+                   
+                    <input type="submit" class="btn btn-primary" value="Download Article" id="btnSubmit" />
+                </form>
+            </div>
+
+        </div>
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Use -->
+
+
+<iframe id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" style="display:none;" onload="if (submitted) { window.location = '../images/Docs/50-Diversion-Questions - eMoksha.pdf'; }"></iframe>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+    @RenderSection("metatags", required: false)
+	
+  
+    @*<meta name="description" content="With our AI-First approach, architecting and developing AI-enabled data analytics and Machine Learning solutions, we seek to inspire organizational innovation and business transformation by delivering key insights and value drivers from organizational data." />*@
+    <meta name="keywords" content="Data Preparation, Data Quality Asessment, Data Discovery" />
+    <meta name="author" content="eMoksha" />
+    <meta name="website" content="http://emokshallc.com/" />
+    <meta name="email" content="salesupport@emokshallc.com" />
+    <meta name="version" content="1.1.0" />
+    <!-- favicon -->
+    <link href="~/images/svg/favicon.svg" rel="shortcut icon">
+   
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/swiper.min.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/tobii.min.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- Custom  Css -->
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    
+    <!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173233305-1"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+  gtag('config', 'UA-173233305-1');
+
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PD1DPLY389"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PD1DPLY389');
+</script>
+
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg  sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="~/images/svg/logo.svg" class="logo-light-mode w-100" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i data-feather="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Industry
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li class="dropdown-hover">
+                                <a class="dropdown-item text-blue" href="/Industry/career-tech">Career Tech &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item text-blue" href="/Industry/tracker/">Tracker</a></li>
+                                    <li><a class="dropdown-item text-blue" href="/Industry/CTlytics/">CTlytics</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item text-blue" href="/Industry/county-courts/">County Courts</a></li>
+                            <li class="dropdown-hover">
+                                <a class="dropdown-item text-blue" href="/Industry/supplychain">Supply Chain &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item text-blue" href="/Industry/demand">Demand</a></li>
+                                    <li><a class="dropdown-item text-blue" href="/Industry/erp">ERP</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-hover">
+                                <a class="dropdown-item text-blue" href="/resources/testimonials/">Testimonials &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item text-blue" href="/resources/career-tech/">Career Tech</a></li>
+                                    <li><a class="dropdown-item text-blue" href="/resources/county-courts/">County Courts</a></li>
+                                    <li><a class="dropdown-item text-blue" href="/resources/supply-chain/">Supply Chain</a></li>
+                                </ul>
+                            </li>
+							  <li class="dropdown-hover">
+                                <a class="dropdown-item text-blue" href="#">Library &raquo;</a>
+                                <ul class="submenu dropdown-menu"> 
+                                    <li><a class="dropdown-item text-blue" href="/Library/court">Courts</a></li>
+                                    <li><a class="dropdown-item text-blue" href="/Library/steel">Steel</a></li>
+									<li><a class="dropdown-item text-blue" href="/Library/CourtDiversionQuestions">Court Diversion Questions</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+						 
+                    </li>
+
+ 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/get-started">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end collapse-->
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- END NAVBAR -->
+    
+    <style>
+        .img-height {
+        
+            height:63vh !important;
+        }
+            .img-height img {top:-10
+            }
+    
+        p {
+            font-size:22px !important;   
+        }
+        
+    
+            
+    </style>
+    
+    <!-- Start Hero -->
+    <section class="section-two bg-col img-height" style="background: url('../images/case/court.png') center; display: flex; align-items: center;">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="col-lg-12" style="position: relative;">
+                <h1 class="title text-white text-center"></h1>
+                <div class="text-center">
+                    <a href="/Home/get-started" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+    
+        </div><!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+     
+     
+    <!--end section-->
+    <!-- Hero End -->
+    
+    <section class="section-two bg-col bg-white ">
+        <div class="container">
+            <div class="col-lg-12">
+    
+                <h2 class="title text-m text-position text-orange m-font">Empowering Court Diversion Program with Data Science, and Machine Learning</h2>
+              <ul class="color-ul">
+                    <li>
+                       You have data about your diversion programs stored in Excel files, case management systems, etc. Are you struggling to extract meaningful information from that data?
+                    </li>
+                    <li>
+                       Are you wondering what is actually working for your diversion programs but have no easy way to figure it out?
+                    </li>
+                    <li>
+                       You wish that your decisions are informed by actionable data but there is no roadmap for you to get to actionable data to make changes on the ground
+                    </li> 
+                </ul>
+                
+                <p class="pt-2">
+                Our client faced similar challenges with their diversion program, which had data dating back to a number of years but they were data rich and information poor as there was no easy way to extract actions needed from data. We turned that data into actions by looking for patterns to extract the cause-and-effect relationships, identifying bottlenecks in work processes, exploring outcomes, and linking outcomes to interventions thus assessing the effectiveness of their interventions.
+                </p>
+                <div class="row justify-content-center ">
+                <div class="col">
+    
+                    <img src="../images/case/Diversion case study infographic_op1_R1.png" class="img-dps d-flex mx-auto img-box-shadow " alt="">
+    
+                </div>
+            </div>
+                <h3 class ="pt-5">Solution:</h3>
+                
+                <p class="pt-2">
+                eMoksha's Data Science Service-based diversion solution was implemented to address these challenges. The solution enabled the court to set benchmarks/performance measures, measure metrics and outcomes, and assess the effectiveness of the interventions on the outcomes. Additionally, a diversion data entry platform was added to the solution to have a rules-based diversion data entry.
+                </p>
+                
+                <h3>Performance Benchmarking</h3>
+                <p class="pt-2">
+                We identified and measured bottlenecks within court processes, focusing on key areas such as compliance, timelines, speed, volume, and overall work efficiency. By doing so, we were to enhance the effectiveness and efficiency of the diversion Program.
+                </p>
+                
+                <h3>Workload Measurement</h3>
+                <p class="pt-2">
+                We improved the efficiency and productivity of our court system through effective workload measurement. This involved managing the court caseload, enhancing processing speed, optimizing the inflow and outflow of people, and ensuring optimal staffing levels.
+                </p>
+                
+                <h3>Outcome Measurement</h3>
+                 <ul class="color-ul">
+                    <li>
+                      1. Measuring the effectiveness of Court Interventions, measuring outcomes, and factors driving outcomes.
+                    </li>
+                    <li>
+                      2. Understanding patterns in offender behavioral health and linking them to interventions/outcomes.
+                    </li>
+                    <li>
+                       3. Uncover cause/effect relationships in the data.
+                    </li> 
+                </ul>
+                
+                
+                  <!-- <h3>Impact</h3>
+                <p class="pt-2">
+                The diversion program was completely transformed, with several program areas being reconfigured and recalibrated-
+                </p>
+                <ul class="color-ul">
+                    <li>
+                      Several interventions were adjusted based on better effectiveness of interventions for certain groups, and changes were made in the dosage for each modality of intervention.
+                    </li>
+                    <li>
+                     Policy areas were reviewed and benchmarked for performance measurement, and staff planning, workload distribution, staff training, and staff performance were linked to outcomes.
+                    </li>
+                    <li>
+                       Lastly, stakeholders and grant funders were provided with evidence of outcome measurements and success.
+                    </li> 
+                </ul> -->
+    
+                 <h3>What was the impact?</h3>
+                <div class="align-center pb-4">
+                    <div class="">
+        
+                        <img src="../images/case/impact.png" class="img-dps mt-3 d-flex mx-auto img-box-shadow " alt="">
+        
+                    </div>
+                </div>
+                
+                <p class="pt-2">
+                    Don't let your diversion data go to waste – turn it into a powerful tool for success with eMoksha's Data Science Service-Based Diversion Solution. Contact us today to learn more about how we can empower your court to achieve greater outcomes and make informed decisions.
+                </p>
+    
+                <h3>
+                </h3>
+                
+                
+            </div>
+    
+        </div><!--end container-->
+    </section>
+    
+       
+   
+    <!-- Footer Start -->
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-2 col-12 mb-lg-0 mb-md-4 pb-lg-0 pb-md-2">
+                                <a href="/" class="logo-footer">
+                                    <img src="~/images/svg/logo.svg" alt="emokshallc">
+                                </a>
+                            </div><!--end col-->
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Get Started</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <h5 class="footer-head">Industry</h5>
+                                    <li><a href="/Industry/career-tech" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Career Tech</a></li>
+                                    <li><a href="/Industry/county-courts/" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> County Courts</a></li>
+                                    <li><a href="/Industry/supplychain" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Supply Chain</a></li>
+
+                                </ul>
+                            </div><!--end col-->
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Our Services</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <h5 class="footer-head">Testimonials</h5>
+                                    <li><a href="/resources/career-tech/" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Career Tech</a></li>
+                                    <li><a href="/resources/county-courts/" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> County Courts</a></li>
+                                    <li><a href="/resources/supply-chain/" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Supply Chain</a></li>
+
+                                </ul>
+                            </div><!--end col-->
+
+                            <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Get In Touch</h5>
+                                <p class="mt-4 text-dark">
+                                    eMoksha - A Data Science Company
+                                    159 Crocker Park Blvd, Suite 400
+                                    Westlake OH 44145
+                                </p>
+                                <ul class="list-unstyled footer-list mt-3">
+                                    <li class="text-dark">Phone: <a href="tel:+1-440-455-9307" class="text-dark "><br>+1 (440) 455-9307</a></li>
+                                    <li class="text-dark">Email: <a href="mailto:sales@emokshallc.com" class="text-dark">sales@emokshallc.com</a></li>
+                                </ul>
+                            </div><!--end col-->
+
+
+                        </div><!--end row-->
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+        <div class="footer-py-30 footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="text-sm-start">
+                            <p class="mb-0 text-dark">©
+                            <script>document.write(new Date().getFullYear())</script> emokshallc | All Rights Reserved</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div>
+    </footer><!--end footer-->
+
+    @Html.Partial("_contactButton")
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+    <!-- Back to top -->
+
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/swiper.min.js"></script>
+    <script src="~/Scripts/tobii.min.js"></script>
+    <script src="~/Scripts/gumshoe.js"></script>
+    <script src="~/Scripts/feather.min.js"></script>
+    <!-- Custom -->
+    <script src="~/Scripts/plugins.init.js"></script>
+    <script src="~/Scripts/app.js"></script>
+</body>
+</html>

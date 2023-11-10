@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Court";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        
+        $("form").submit(function () {
+            if ($('#mce-FNAME').val() == '') {
+                alert("Name Required.");
+                return false;
+            }
+            if ($('#mce-EMAIL').val() == '') {
+                alert("Email Address Required.");
+                return false;
+            }
+
+            var legalDomains = {
+                "-yahoo.com": true,
+                "-gmail.com": true,
+                "-hotmail.com": true,
+                "-msn.com": true
+            };
+            reg_email = $('#mce-EMAIL').val();
+            var matches = reg_email.match(/@@(.*)$/);
+            if (matches) {
+
+                if (("-" + matches[1]) in legalDomains) {
+                    // found the domain in the permitted list
+                    alert("Please enter valid Email Address.");
+                    return false;
+                }
+            }
+
+        });
+    });
+    
+
+</script>
+ <!-- Start Use -->
+ <section class="section bg-image" id="use" >
+    <div class="container img-box-shadow p-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="../images/Pre-trial-Whitepaper-cover.jpg" class="mx-auto img-box-shadow basic-img " alt="" />
+            </div>
+            
+        <div class="col-lg-6">
+            
+            <form action="https://emokshallc.us14.list-manage.com/subscribe/post?u=bd5185556f02c73fc4ded063a&amp;id=afd201734c&amp;f_id=00ba9be0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-container" target="mc-embedded-subscribe-form" novalidate onsubmit="submitted=true">
+                    <h4 class="title text-center text-blue mb-4">SIGN UP TO GET FREE WHITE PAPER</h4>
+                    <p>Pre-Trial manages bond information in a case management system which could be a vendor-the provided system, statewide system, or home-grown system. These systems typically output some reporting which provides basic information about the number of bonds issued, types of bonds issued, etc. The purpose of the report is to make sense of the bond data and is also generated for annual reporting purposes. This is how Pre-Trial is used to look at their data and make sense of it.However, with the recent arrival of machine learning and Artificial Intelligence, a fundamental shift needs to take place regarding how we look at historical Pre-Trial data (we will use sample bond data in this white paper) to discern more than what Pre-Trial is used to. We will examine in this white paper how AI/Machine Learning can be put to use for better outcomes for Pre-Trial.</p>
+            <div class="mb-3">
+                <label for="mce-FNAME" class="form-label">Name  <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="mce-FNAME" name="FNAME" aria-describedby="name" required>
+              </div>
+            <div class="mb-3">
+              <label for="mce-EMAIL" class="form-label">Email Address  <span class="asterisk">*</span></label>
+              <input type="email" class="form-control" id="mce-EMAIL"  name="EMAIL" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+          
+            <button type="submit" name="submit" class="btn btn-primary">Download Article
+</button>
+          </form>
+        </div>
+       
+        </div>
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Use -->
+
+        
+        <iframe id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" style="display:none;" onload="if(submitted) {window.location='../images/Docs/white-paper.pdf';}"></iframe>
+      
