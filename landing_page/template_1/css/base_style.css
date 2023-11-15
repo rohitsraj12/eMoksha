@@ -72,12 +72,15 @@
   
   p,
   li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--font-primary);
     font-weight: 400;
     letter-spacing: 0.1px;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     color: var(--color-text-1);
+  }
+  p {
+    padding-bottom: 12px;
   }
 
   small {
@@ -87,18 +90,22 @@
     color:rgb(131, 131, 131);
   }
 
+  label {
+    font-size: 1.2rem;
+  }
+
   /* typography */
   .text__tagline {
     font-family: var(--font-primary);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
     color: var(--color-text-1);
   }
 
   .header__primary {
     font-family: var(--font-primary);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--color-theme);
   }
